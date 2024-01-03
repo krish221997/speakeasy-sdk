@@ -38,10 +38,10 @@ yarn add <UNSET>
 ### Example
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 
 async function run() {
-    const sdk = new SDK();
+    const sdk = new Client();
 
     const id = "string";
     const xIntegrationosSecret = "string";
@@ -99,11 +99,11 @@ All SDK methods return a response object or throw an error. If Error objects are
 Example
 
 ```typescript
-import { SDK } from "openapi";
-import * as errors from "openapi/models/errors";
+import { Client } from "integrationos/node";
+import * as errors from "integrationos/node/models/errors";
 
 async function run() {
-    const sdk = new SDK();
+    const sdk = new Client();
 
     const id = "string";
     const xIntegrationosSecret = "string";
@@ -164,8 +164,8 @@ custom header and a timeout to requests and how to use the `"requestError"` hook
 to log errors:
 
 ```typescript
-import { SDK } from "openapi";
-import { HTTPClient } from "openapi/lib/http";
+import { Client } from "integrationos/node";
+import { HTTPClient } from "integrationos/node/lib/http";
 
 const httpClient = new HTTPClient({
   // fetcher takes a function that has the same signature as native `fetch`.
@@ -191,7 +191,7 @@ httpClient.addHook("requestError", (error, request) => {
   console.groupEnd();
 });
 
-const sdk = new SDK({ httpClient });
+const sdk = new Client({ httpClient });
 ```
 <!-- End Custom HTTP Client [http-client] -->
 

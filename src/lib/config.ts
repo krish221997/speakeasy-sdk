@@ -25,6 +25,8 @@ export type SDKOptions = {
      * Allows overriding the default retry config used by the SDK
      */
     retryConfig?: RetryConfig;
+    secret?: string;
+    connectionKey?: string;
 };
 
 export function serverURLFromOptions(options: SDKOptions): URL {
@@ -46,5 +48,5 @@ export const SDK_METADATA = Object.freeze({
     openapiDocVersion: "1.0.1",
     sdkVersion: "0.0.1",
     genVersion: "2.223.3",
-    userAgent: "speakeasy-sdk/typescript 0.0.1 2.223.3 1.0.1 openapi",
+    userAgent: "speakeasy-sdk/typescript 0.0.1 2.223.3 1.0.1 integrationos/node",
 });

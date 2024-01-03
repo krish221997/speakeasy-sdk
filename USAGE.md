@@ -1,9 +1,9 @@
 <!-- Start SDK Example Usage [usage] -->
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 
 async function run() {
-    const sdk = new SDK();
+    const sdk = new Client();
 
     const id = "string";
     const xIntegrationosSecret = "string";

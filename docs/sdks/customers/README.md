@@ -17,10 +17,10 @@ Get a single customers record
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const id = "string";
   const xIntegrationosSecret = "string";
@@ -65,10 +65,10 @@ Delete a single customers record
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const id = "string";
   const xIntegrationosSecret = "string";
@@ -113,11 +113,11 @@ Update a single customers record
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { CustomerType, PatchCustomersIdType, PreferredContactMethod, Status } from "openapi/models/operations";
+import { Client } from "integrationos/node";
+import { CustomerType, PatchCustomersIdType, PreferredContactMethod, Status } from "integrationos/node/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const id = "string";
   const xIntegrationosSecret = "string";
@@ -187,10 +187,10 @@ Get all customers records
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const xIntegrationosSecret = "string";
   const xIntegrationosConnectionKey = "string";
@@ -233,16 +233,16 @@ Create a single customers record
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 import {
   PostCustomersCustomersType,
   PostCustomersCustomerType,
   PostCustomersPreferredContactMethod,
   PostCustomersStatus,
-} from "openapi/models/operations";
+} from "integrationos/node/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const xIntegrationosSecret = "string";
   const xIntegrationosConnectionKey = "string";
@@ -331,10 +331,10 @@ Get the count of customers records
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const xIntegrationosSecret = "string";
   const xIntegrationosConnectionKey = "string";

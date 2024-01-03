@@ -28,15 +28,18 @@ export class Customers extends ClientSDK {
      * Get a single customers record
      */
     async getCustomersId(
-        id: string,
-        xIntegrationosSecret: string,
-        xIntegrationosConnectionKey: string,
-        options?: RequestOptions
+        {
+            id,
+            options
+        }: {
+            id: string;
+            options?: RequestOptions;
+        }
     ): Promise<operations.GetCustomersIdResponse> {
         const input$: operations.GetCustomersIdRequest = {
             id: id,
-            xIntegrationosSecret: xIntegrationosSecret,
-            xIntegrationosConnectionKey: xIntegrationosConnectionKey,
+            xIntegrationosSecret: this.options$.secret as string,
+            xIntegrationosConnectionKey: this.options$.connectionKey as string,
         };
         const headers$ = new Headers();
         headers$.set("user-agent", SDK_METADATA.userAgent);
@@ -242,13 +245,11 @@ export class Customers extends ClientSDK {
      * Get all customers records
      */
     async getCustomers(
-        xIntegrationosSecret: string,
-        xIntegrationosConnectionKey: string,
         options?: RequestOptions
     ): Promise<operations.GetCustomersResponse> {
         const input$: operations.GetCustomersRequest = {
-            xIntegrationosSecret: xIntegrationosSecret,
-            xIntegrationosConnectionKey: xIntegrationosConnectionKey,
+            xIntegrationosSecret: this.options$.secret as string,
+            xIntegrationosConnectionKey: this.options$.connectionKey as string,
         };
         const headers$ = new Headers();
         headers$.set("user-agent", SDK_METADATA.userAgent);

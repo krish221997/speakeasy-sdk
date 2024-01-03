@@ -8,7 +8,7 @@ import { ClientSDK } from "../lib/sdks";
 import { Customers } from "./customers";
 import { Products } from "./products";
 
-export class SDK extends ClientSDK {
+export class Client extends ClientSDK {
     private readonly options$: SDKOptions;
 
     constructor(options: SDKOptions = {}) {

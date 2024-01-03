@@ -358,7 +358,7 @@ docs/models/operations/getproductscountcache.md
 docs/models/operations/getproductscountmeta.md
 docs/models/operations/getproductscountresponsebody.md
 docs/models/operations/getproductscountresponse.md
-docs/sdks/sdk/README.md
+docs/sdks/client/README.md
 docs/sdks/customers/README.md
 docs/sdks/products/README.md
 USAGE.md

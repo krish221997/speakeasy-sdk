@@ -1,7 +1,7 @@
 configVersion: 1.0.0
 generation:
   comments: {}
-  sdkClassName: SDK
+  sdkClassName: Client
   maintainOpenAPIOrder: true
   usageSnippets:
     optionalPropertyRendering: withExample
@@ -15,7 +15,7 @@ features:
     globalServerURLs: 2.82.1
 typescript:
   version: 0.0.1
-  author: Speakeasy
+  author: IntegrationOS
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
   imports:
@@ -29,5 +29,5 @@ typescript:
   inputModelSuffix: input
   maxMethodParams: 4
   outputModelSuffix: output
-  packageName: openapi
+  packageName: integrationos/node
   templateVersion: v2

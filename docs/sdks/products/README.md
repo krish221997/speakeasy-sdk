@@ -17,10 +17,10 @@ Get a single products record
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const id = "string";
   const xIntegrationosSecret = "string";
@@ -65,10 +65,10 @@ Delete a single products record
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const id = "string";
   const xIntegrationosSecret = "string";
@@ -113,16 +113,16 @@ Update a single products record
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 import {
   PatchProductsIdProductsStatus,
   PatchProductsIdProductsType,
   PatchProductsIdType,
   SkuValidation,
-} from "openapi/models/operations";
+} from "integrationos/node/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const id = "string";
   const xIntegrationosSecret = "string";
@@ -235,10 +235,10 @@ Get all products records
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const xIntegrationosSecret = "string";
   const xIntegrationosConnectionKey = "string";
@@ -281,16 +281,16 @@ Create a single products record
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 import {
   PostProductsProductsStatus,
   PostProductsProductsType,
   PostProductsSkuValidation,
   PostProductsType,
-} from "openapi/models/operations";
+} from "integrationos/node/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const xIntegrationosSecret = "string";
   const xIntegrationosConnectionKey = "string";
@@ -420,10 +420,10 @@ Get the count of products records
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { Client } from "integrationos/node";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new Client();
 
   const xIntegrationosSecret = "string";
   const xIntegrationosConnectionKey = "string";
